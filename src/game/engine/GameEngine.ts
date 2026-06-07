@@ -1,11 +1,11 @@
-import { BetType, GameStatus, type GameState, type RoundResult } from "../models/GameState";
-import { gameConfig } from "../config/gameConfig";
-import { didWin } from "../rules/BettingRule";
-import { scoreDelta } from "../rules/ScoreRule";
-import { hasTerminalDynamicValue, dynamicTileLimitMessage, updateDynamicValues } from "../rules/TileValueRule";
-import type { Tile } from "../models/Tile";
-import { createInitialDeck, discardTiles, drawTiles } from "./DeckManager";
-import { createHand } from "./HandEvaluator";
+import { gameConfig } from "@/game/config/gameConfig";
+import { createInitialDeck, discardTiles, drawTiles } from "@/game/engine/DeckManager";
+import { createHand } from "@/game/engine/HandManager";
+import { BetType, GameStatus, type GameState, type RoundResult } from "@/game/models/GameState";
+import type { Tile } from "@/game/models/Tile";
+import { didWin } from "@/game/rules/BettingRule";
+import { scoreDelta } from "@/game/rules/ScoreRule";
+import { dynamicTileLimitMessage, hasTerminalDynamicValue, updateDynamicValues } from "@/game/rules/TileValueRule";
 
 export function startNewGame(): GameState {
   const deck = createInitialDeck();

@@ -1,5 +1,5 @@
 import type { Hand } from "@/game/models/Hand";
-import { Tile } from "./Tile";
+import { Tile } from "@/components/tiles/Tile";
 
 export function TileHand({ hand }: { readonly hand: Hand }) {
   return (

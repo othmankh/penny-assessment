@@ -1,5 +1,5 @@
-import type { Tile } from "../models/Tile";
-import { createDeck } from "../factories/TileFactory";
+import { createDeck } from "@/game/factories/TileFactory";
+import type { Tile } from "@/game/models/Tile";
 import { shuffle } from "@/utils/random";
 
 export interface DeckState {

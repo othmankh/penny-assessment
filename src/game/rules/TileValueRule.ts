@@ -1,7 +1,7 @@
-import type { Hand } from "../models/Hand";
-import type { Tile } from "../models/Tile";
-import { isDynamicTile } from "../models/Tile";
-import { gameConfig } from "../config/gameConfig";
+import { gameConfig } from "@/game/config/gameConfig";
+import type { Hand } from "@/game/models/Hand";
+import type { Tile } from "@/game/models/Tile";
+import { isDynamicTile } from "@/game/models/Tile";
 
 export function updateDynamicValues(hand: Hand, won: boolean): Tile[] {
   return hand.tiles.map((tile) => {

@@ -1,4 +1,4 @@
-import type { DragonSuit, NumberSuit, Tile, WindSuit } from "../models/Tile";
+import type { DragonSuit, NumberSuit, Tile, WindSuit } from "@/game/models/Tile";
 import { createId } from "@/utils/random";
 
 const numberSymbolEntries: readonly { suit: NumberSuit; symbols: readonly string[] }[] = [

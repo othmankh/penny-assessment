@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { BetType, GameStatus, type GameState } from "../models/GameState";
-import { gameConfig } from "../config/gameConfig";
-import { playRound, startNewGame } from "../engine/GameEngine";
-import { dynamicTileLimitMessage, hasTerminalDynamicValue, updateDynamicValues } from "../rules/TileValueRule";
-import type { Hand } from "../models/Hand";
-import type { Tile } from "../models/Tile";
+import { gameConfig } from "@/game/config/gameConfig";
+import { playRound, startNewGame } from "@/game/engine/GameEngine";
+import type { Hand } from "@/game/models/Hand";
+import { BetType, GameStatus, type GameState } from "@/game/models/GameState";
+import type { Tile } from "@/game/models/Tile";
+import { dynamicTileLimitMessage, hasTerminalDynamicValue, updateDynamicValues } from "@/game/rules/TileValueRule";
 
 const dynamicTile = (value: number): Tile => ({
   id: `dragon-${value}`,

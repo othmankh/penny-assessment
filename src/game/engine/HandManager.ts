@@ -1,5 +1,5 @@
-import type { Hand } from "../models/Hand";
-import type { Tile } from "../models/Tile";
+import type { Hand } from "@/game/models/Hand";
+import type { Tile } from "@/game/models/Tile";
 import { createId } from "@/utils/random";
 
 export function createHand(tiles: readonly Tile[]): Hand {

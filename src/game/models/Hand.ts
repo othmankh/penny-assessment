@@ -1,4 +1,4 @@
-import type { Tile } from "./Tile";
+import type { Tile } from "@/game/models/Tile";
 
 export interface Hand {
   readonly id: string;

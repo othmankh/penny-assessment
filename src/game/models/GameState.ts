@@ -1,5 +1,5 @@
-import type { Hand } from "./Hand";
-import type { Tile } from "./Tile";
+import type { Hand } from "@/game/models/Hand";
+import type { Tile } from "@/game/models/Tile";
 
 export enum BetType {
   Higher = "higher",
