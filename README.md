@@ -2,6 +2,10 @@
 
 A polished web-based Mahjong tile betting game built for the Penny Software technical assessment.
 
+## Demo Video
+
+Watch a walkthrough of the game here: [Game demo video](https://drive.google.com/file/d/1VhAQbJK4fyCem6Jcmgq44_tmU3XV-dDE/view?usp=sharing)
+
 ## Features
 
 - Landing page with New Game and top 5 leaderboard
